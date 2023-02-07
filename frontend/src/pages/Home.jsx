@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Notes from '../components/Notes'
+import EmptyNotes from './EmptyNotes'
 
 const Home = () => {
   const [notes, setNotes] = useState([])
@@ -12,6 +13,11 @@ const Home = () => {
       .catch(err => console.log(err))
   }, [])
 
-  return <Notes notes={notes} />
+  return (
+    <>
+      {/* {!notes && <EmptyNotes />} */}
+      <Notes notes={notes} />
+    </>
+  )
 }
 export default Home
