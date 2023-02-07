@@ -1,15 +1,15 @@
-import Navbar from "./components/Navbar";
-import EmptyNotes from "./components/EmptyNotes";
-import Notes from "./components/Notes";
+import Navbar from './components/Navbar'
+import Notes from './components/Notes'
+import Home from './pages/Home'
 
 function App() {
   return (
     <>
       <Navbar />
-      {/* <EmptyNotes /> */}
       <Notes />
+      <Home />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
