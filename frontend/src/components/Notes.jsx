@@ -1,30 +1,8 @@
-const messages = [
-  {
-    id: 1,
-    subject: 'Velit placeat sit ducimus non sed',
-    sender: 'Gloria Roberston',
-    time: '1d ago',
-    datetime: '2021-01-27T16:35',
-    preview:
-      'Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.',
-  },
-  {
-    id: 2,
-    subject: 'Velit placeat sit ducimus non sed',
-    sender: 'Gloria Roberston',
-    time: '1d ago',
-    datetime: '2021-01-27T16:35',
-    preview:
-      'Doloremque dolorem maiores assumenda dolorem facilis. Velit vel in a rerum natus facere. Enim rerum eaque qui facilis. Numquam laudantium sed id dolores omnis in. Eos reiciendis deserunt maiores et accusamus quod dolor.',
-  },
-  // More messages...
-]
-
 export default function Notes({ notes }) {
   return (
     <ul role='list' className=' divide-gray-200 mt-10 w-1/2 mx-auto'>
       {console.log(notes)}
-      {/* {notes.map(note => (
+      {notes.map(note => (
         <li
           key={note._id}
           className='relative bg-white py-5 px-4 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 hover:bg-gray-50 max-w-3xl'>
@@ -52,7 +30,7 @@ export default function Notes({ notes }) {
             </p>
           </div>
         </li>
-      ))} */}
+      ))}
     </ul>
   )
 }
